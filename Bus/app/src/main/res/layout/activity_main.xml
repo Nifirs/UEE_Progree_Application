@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ev"
+    android:backgroundTint="@android:color/darker_gray"
+    android:backgroundTintMode="multiply"
+    android:orientation="vertical"
+    android:visibility="visible"
+    tools:context=".MainActivity"
+
+    >
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="283dp"
+        android:layout_height="215dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/b" />
+
+    <Button
+        android:id="@+id/btngo"
+        style="@android:style/Widget.Material.Button"
+        android:layout_width="358dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="316dp"
+        android:background="@drawable/seat"
+        android:drawablePadding="6dp"
+        android:drawableRight="@drawable/nn"
+        android:paddingBottom="4dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="10dp"
+        android:paddingTop="4dp"
+        android:shadowColor="@android:color/holo_blue_bright"
+        android:text="Book your Seat Now"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.301"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/lock"
+        android:layout_width="186dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="180dp"
+        android:onClick="lockSlide"
+        android:text="Lock Screen"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/unlock"
+        android:layout_width="168dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="192dp"
+        android:onClick="unlockSlide"
+        android:text="UNLOCK Screen"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/lock"
+        app:layout_constraintTop_toTopOf="@+id/lock" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@android:color/background_dark"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:titleTextColor="@android:color/white"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="59dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bb" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="267dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="52dp"
+        android:fontFamily="@font/armata"
+        android:text="TechieBoom your Travel partner"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textColorHighlight="@android:color/holo_blue_bright"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.484" />
+
+<!--    <pl.droidsonroids.gif.GifImageView-->
+<!--        android:id="@+id/gifImage"-->
+<!--        android:layout_width="413dp"-->
+<!--        android:layout_height="163dp"-->
+
+<!--        android:background="@android:color/holo_blue_light"-->
+<!--        android:src="@drawable/gifstop"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/toolbar" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
