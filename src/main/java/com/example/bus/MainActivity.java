@@ -66,10 +66,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
             case R.id.nav_share:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new textFragment()).commit();
+                        new aboutUs()).commit();
                 break;
             case R.id.nav_send:
-                Toast.makeText(this, "Send", Toast.LENGTH_SHORT).show();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new contactUs()).commit();
                 break;
         }
         drawer.closeDrawer(GravityCompat.START);

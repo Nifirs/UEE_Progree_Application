@@ -4,10 +4,12 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 
@@ -32,6 +34,18 @@ public class ProfileFragment extends Fragment {
         ArrayAdapter<String> adapte = new ArrayAdapter<String>(this.getActivity(), android.R.layout.simple_spinner_item, value);
         adapte.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
         spinne.setAdapter(adapte);
+
+        Button aboutBtn = (Button) view.findViewById(R.id.button2);
+
+
+        aboutBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentTransaction fr=getFragmentManager().beginTransaction();
+                fr.replace(R.id.fragment_container,new sucFragment());
+                fr.commit();
+            }
+        });
 
 
         return view;

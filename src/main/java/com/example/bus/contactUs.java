@@ -10,34 +10,18 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-public class MessageFragment extends Fragment {
+public class contactUs extends Fragment {
 
-    public MessageFragment() {
+    public contactUs() {
     }
-
 
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         //return inflater.inflate(R.layout.fragment_message,container,false);
 
-        View view = inflater.inflate(R.layout.fragment_message,container,false);
-
-        Button aboutBtn = (Button) view.findViewById(R.id.buttona);
-
-
-        aboutBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                FragmentTransaction fr=getFragmentManager().beginTransaction();
-                fr.replace(R.id.fragment_container,new busDetails());
-                fr.commit();
-            }
-        });
-
-
+        View view = inflater.inflate(R.layout.contactus, container, false);
 
         return view;
     }
-
 }

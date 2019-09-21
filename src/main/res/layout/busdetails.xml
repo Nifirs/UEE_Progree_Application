@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9C7171"
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="82dp"
+        android:layout_marginLeft="82dp"
+        android:layout_marginTop="87dp"
+        android:text="Bus Details"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="114dp"
+        android:layout_marginLeft="114dp"
+        android:layout_marginTop="552dp"
+        android:background="@drawable/custombutton"
+        android:text="Book Now"
+        tools:layout_editor_absoluteX="191dp"
+        tools:layout_editor_absoluteY="522dp" />
+</RelativeLayout>

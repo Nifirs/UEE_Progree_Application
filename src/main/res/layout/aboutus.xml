@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9C7171"
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="66dp"
+        android:layout_marginLeft="66dp"
+        android:layout_marginTop="89dp"
+        android:text="About Us"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="61dp"
+        android:layout_marginLeft="61dp"
+        android:layout_marginTop="197dp"
+        android:text="You are the reason why we are here. BusBooking.lk is always striving hard to provide you a better passenger experience with luxury bus booking online blended with cutting edge technology and Sri Lankan hospitality.
+BusBooking.lk is Sri Lanka’s first ever booking and reservation services provider for public passenger transport sector with a fully automated multi-platform booking engine complete with bus schedule. Sri Lanka is a country that thrives on public transport. And we believe that our innovative solutions can create a positive impact on all Sri Lankan passengers and commuters, simply eliminating their non-value adding waiting-time which can be spend in a more productive and efficient way from now on.
+
+We are a learning organisation. That means, we would like to hear your suggestions, improvements and experiences. Please feel free to reach us at our hotline 0115116117. Customer happiness is our business!"
+        android:textSize="12sp" />
+
+
+
+
+
+</RelativeLayout>
